@@ -1,0 +1,13 @@
+<ion-view view-title="今日訂單">
+  <ion-content>
+    <div class="list">
+
+      <div class="item" ng-repeat="rec in records">
+        <h2>{{rec.cusName}}</h2>
+        <span>{{rec.caseName}}</span>
+        <span class="badge badge-assertive">{{rec.weight}}&nbspKG</span>
+        <p>{{rec.addr}}</p>
+      </div>
+  </div>
+  </ion-content>
+</ion-view>
