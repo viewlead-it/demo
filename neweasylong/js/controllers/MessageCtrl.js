@@ -1,4 +1,4 @@
-CONTROLLER.controller('MessageCtrl', function($scope) {
+CONTROLLERS.controller('MessageCtrl', function($scope) {
   $scope.$on('$ionicView.enter', function(e) {
     console.log('Enter messageCtrl');
 

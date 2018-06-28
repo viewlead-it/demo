@@ -93,6 +93,22 @@ angular.module('starter', ['ionic','starter.controllers'])
         }
       }
     })
+    .state('tabs.homemenu.todayPurchase', {
+      url: "/todayPurchase",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/todayPurchase.html"
+        }
+      }
+    })
+    .state('tabs.homemenu.contractRemain', {
+      url: "/contractRemain",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/contractRemain.html"
+        }
+      }
+    })
     .state('tabs.contact', {
       url: "/contact",
       views: {
@@ -110,10 +126,17 @@ angular.module('starter', ['ionic','starter.controllers'])
         }
       }
     })
+
+    .state('login', {
+        url: '/login',
+        templateUrl: 'templates/login.html',
+        controller: 'loginCtrl'
+      });
     ;
 
 
-   $urlRouterProvider.otherwise("/tab/homemenu/home");
+   // $urlRouterProvider.otherwise("/tab/homemenu/home");
+   $urlRouterProvider.otherwise("/login");
 
 })
-CONTROLLER = angular.module('starter.controllers', []);
+CONTROLLERS = angular.module('starter.controllers', []);

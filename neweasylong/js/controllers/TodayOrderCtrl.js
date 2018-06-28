@@ -1,4 +1,4 @@
-CONTROLLER.controller('TodayOrderCtrl', function($scope, $state) {
+CONTROLLERS.controller('TodayOrderCtrl', function($scope, $state) {
   $scope.records = [
     {
       "cusName":"易利晟鋼鐵有限公司",

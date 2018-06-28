@@ -1,3 +1,3 @@
-CONTROLLER.controller('HomeTabCtrl', function($scope, $state) {
+CONTROLLERS.controller('HomeTabCtrl', function($scope, $state) {
   
 });
